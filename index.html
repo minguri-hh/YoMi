@@ -347,8 +347,8 @@ details.lit p.lt{background:var(--paper);border-radius:10px;padding:9px 11px;col
         </div>
         <form id="keyForm">
           <div id="gemFields">
-            <p class="help" style="margin-top:14px"><a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener">Google AI Studio</a>에서 Google 계정으로 로그인하고 <b>Create API key</b>를 누르면 무료 키가 나와요. 카드 등록은 필요 없어요.</p>
-            <div class="field"><label for="gkeyIn">Gemini API 키</label><input id="gkeyIn" type="password" placeholder="AIza로 시작하는 키" autocomplete="off" spellcheck="false"></div>
+            <p class="help" style="margin-top:14px"><a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener">Google AI Studio</a>에서 Google 계정으로 로그인하고 <b>Create API key</b>를 누르면 무료 키가 나와요. 키 옆의 <b>키 복사</b> 버튼으로 복사하세요. 카드 등록은 필요 없어요.</p>
+            <div class="field"><label for="gkeyIn">Gemini API 키</label><input id="gkeyIn" type="password" placeholder="AQ. 또는 AIza로 시작하는 키" autocomplete="off" spellcheck="false"></div>
             <div class="field"><label for="gmodelIn">판독 모델</label>
               <select id="gmodelIn">
                 <option value="gemini-3.5-flash-lite">3.5 Flash-Lite · 빠름 (추천)</option>
@@ -1031,7 +1031,7 @@ $('#keyForm').addEventListener('submit',e=>{
   const c=getCfg(); const prov=S.prov||'gemini';
   if(prov==='gemini'){
     const k=$('#gkeyIn').value.trim();
-    if(k&&!/^AIza/.test(k)){ toast('Gemini 키는 보통 AIza로 시작해요. 다시 확인해 주세요'); return; }
+    if(k&&(/\s/.test(k)||k.length<20)){ toast('키가 잘린 것 같아요. 키 복사 버튼으로 다시 복사해 주세요'); return; }
     if(k) c.gkey=k; else delete c.gkey; c.gmodel=$('#gmodelIn').value;
   }else{
     const key=$('#keyIn').value.trim(), ws=$('#wsIn').value.trim();
