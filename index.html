@@ -10,9 +10,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="YoMi">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<link rel="manifest" href="manifest.webmanifest">
-<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
-<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAADmUlEQVR4Xu2WXWgcVRTH77n3zuzMTjbZYDcxWY39iB8EWyopgfqBSi2houBDHrQ+WUSobyqKok8tEvBFQbQiVH2QIqKo+FARpNSHiGitBFpaYm2osWljUodMZnZm9t5z5E7aaOPuTljpm/+nCzNzf/d/vu7Atw8/y9oSERVcx/GKRNRiA97W5pclbSv38/YBQgghZevjM9YugIhAcAC4hg7WqPZDtEa1CQAAVBoRczFtAhhjiIhK5aYhDwAAvNE7YFSvq8ZP/yHZyiMAJnVSShSdVa9hkjKiOE4EMdtzW3RaUwBwUGHcc/9w19DGX9//kq20KzEQ3NvQz6XkBYsLgXO+wTfp5+YOADCtd2ys9uzYdvr1Q8J1uCUY54Ra2PbQy3ukW5ClItbVj0+N2wyEbTVsulYhAiHSPwNuWdveeUmWirOHJ8599LVV8lDpn597QwXR8IEXFyYmo9/noNoDiDzL1ipM0ySb7IFhEOLc0Z9mPvnGP35aFGwiUosht2Tfg3d6N13vT07JDnfz+NOi/7pwwV8u3KwCLquJA6J6EKqlGiapDmtn3/tCFl3hOdyWupYO7h3r3TlidXpqKRp6ZU96adHtW6eiWhJGyIEDcCmW3SBiYwfE2PrHd20/tH9g96jsKA48OipLHiHVl2q9O0cq995xYv9BXUtOvfbhD0++unRmBqQY3Dtml0uotdI6jZM4qsVRLY2T1QAQXAVR9aG7B3aPnnn38wtffccd+9ZnHht+6/nylpt1FJdv3xRfvNS3a3vyhz939Fj020XpucHUucWTZ80ENPG5KkRNcpDZLFYrnUMbdBh//8Q+TOq9D4wA5+cPTziV7u6tt5wc/8CtVobffqFr8+CJfQen3vyYNJrtr24KaHCjkZniNzxyX+WerSpKZj47MnfkmF0ugRSYpKi0cAqMsdQPKndtuXFsxy8HPg2nz4uiYwD/UiNAVmsqjM0iKyRZdAgxA5vayNYEQug4Ja1BClGwCBu3c5MqArC6vKw5wdDMXNMGRxx1thCCIfKCBWARsWa7M9a80a74Necios5NVYYUXVjwqv3LMyqcnWeIlHeptRx2mYCDjlJ3XXf5tvWpHzg93aQxmJ6tzfs6TvP2XwOAIXFL+qem43lfeu7C5BQhcSlIaxO/POU7MHkQPA2ixA9MpV85M7dk7m3TKgerZCaAsEzGVx60/N9aUb6Dv5X7D9RIeVfmf9b/gFxd8xD9Bansn4GHlZIvAAAAAElFTkSuQmCC">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Noto+Sans+KR:wght@400;500;700&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
@@ -249,6 +248,13 @@ details.lit p.lt{background:var(--paper);border-radius:10px;padding:9px 11px;col
 .warnbox{margin-top:14px;padding:12px 14px;border-radius:10px;background:var(--unsure-soft);color:#6B4A00;font-size:12.5px}
 .note button{color:#2D5E45;font-weight:700;text-decoration:underline;text-underline-offset:3px;margin-left:4px}
 
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:4px;background:var(--bg);border-radius:12px}
+.seg button{height:52px;border-radius:9px;display:grid;align-content:center;justify-items:center;line-height:1.25;color:var(--sub)}
+.seg button b{font-size:14.5px}
+.seg button small{font-size:11px;color:var(--muted)}
+.seg button[aria-checked="true"]{background:var(--paper);color:var(--ink);box-shadow:0 1px 4px rgba(0,0,0,.08)}
+.seg button[aria-checked="true"] small{color:var(--pink-deep);font-weight:700}
+
 /* 하단 탭바 */
 .tabbar{position:fixed;left:50%;transform:translateX(-50%);bottom:0;width:100%;max-width:var(--app);z-index:40;height:calc(var(--tabbar) + env(safe-area-inset-bottom));padding-bottom:env(safe-area-inset-bottom);background:var(--paper);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(3,1fr);align-items:center}
 .tab{display:grid;justify-items:center;gap:1px;font-size:11px;font-weight:500;color:var(--muted);height:100%;align-content:center}
@@ -293,7 +299,7 @@ details.lit p.lt{background:var(--paper);border-radius:10px;padding:9px 11px;col
           <button class="mode" data-act="demo-scan"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3.5" width="14" height="17" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></span>예시 사진</button>
         </div>
       </div>
-      <p class="note" id="aiNote" hidden>내 사진을 AI로 판독하려면 설정에서 Claude API 키를 넣어주세요. 지금은 예시 결과로 둘러볼 수 있어요.<button data-act="go-settings">설정 열기</button></p>
+      <p class="note" id="aiNote" hidden>내 사진을 AI로 판독하려면 설정에서 Gemini 무료 키를 넣어주세요. 지금은 예시 결과로 둘러볼 수 있어요.<button data-act="go-settings">설정 열기</button></p>
 
       <section class="blk">
         <div class="blk-h"><h3>최근 판독</h3><button class="more" data-act="go-history">전체 보기</button></div>
@@ -335,17 +341,34 @@ details.lit p.lt{background:var(--paper);border-radius:10px;padding:9px 11px;col
     <section class="view" id="v-settings" hidden>
       <div class="blk">
         <div class="blk-h"><h3>AI 연결</h3><p class="status" id="aiStatus"><i></i><span>연결 안 됨</span></p></div>
-        <p class="help">사진 판독과 다시 번역은 Claude API로 작동해요. 키는 <a href="https://console.anthropic.com/settings/keys" target="_blank" rel="noopener">Anthropic Console</a>에서 만들 수 있고, 사용한 만큼 요금이 나가요.</p>
+        <div class="seg" role="radiogroup" aria-label="AI 고르기">
+          <button type="button" role="radio" data-act="provider" data-p="gemini" aria-checked="true"><b>Gemini</b><small>무료</small></button>
+          <button type="button" role="radio" data-act="provider" data-p="claude" aria-checked="false"><b>Claude</b><small>유료 · 더 정확</small></button>
+        </div>
         <form id="keyForm">
-          <div class="field"><label for="keyIn">Claude API 키</label><input id="keyIn" type="password" placeholder="sk-ant-로 시작하는 키" autocomplete="off" spellcheck="false"></div>
-          <div class="field"><label for="modelIn">판독 모델</label>
-            <select id="modelIn">
-              <option value="claude-sonnet-5-5">Sonnet · 손글씨를 더 정확하게 (추천)</option>
-              <option value="claude-haiku-5-5">Haiku · 더 빠르고 저렴하게</option>
-            </select></div>
+          <div id="gemFields">
+            <p class="help" style="margin-top:14px"><a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener">Google AI Studio</a>에서 Google 계정으로 로그인하고 <b>Create API key</b>를 누르면 무료 키가 나와요. 카드 등록은 필요 없어요.</p>
+            <div class="field"><label for="gkeyIn">Gemini API 키</label><input id="gkeyIn" type="password" placeholder="AIza로 시작하는 키" autocomplete="off" spellcheck="false"></div>
+            <div class="field"><label for="gmodelIn">판독 모델</label>
+              <select id="gmodelIn">
+                <option value="gemini-3.5-flash-lite">3.5 Flash-Lite · 빠름 (추천)</option>
+                <option value="gemini-3-flash-preview">3 Flash · 손글씨를 더 꼼꼼히 (미리보기)</option>
+              </select></div>
+            <p class="warnbox">무료 등급으로 보낸 사진과 글은 Google이 서비스 개선에 쓸 수 있어요. 개인 정보가 담긴 메모나 편지는 올리지 않는 게 좋아요. 하루 무료 사용 횟수도 정해져 있어요.</p>
+          </div>
+          <div id="claFields" hidden>
+            <p class="help" style="margin-top:14px"><a href="https://platform.claude.com/settings/keys" target="_blank" rel="noopener">Claude Console</a>에서 키를 만들 수 있어요. 크레딧을 충전해야 쓸 수 있고 사용한 만큼 차감돼요.</p>
+            <div class="field"><label for="keyIn">Claude API 키</label><input id="keyIn" type="password" placeholder="sk-ant-로 시작하는 키" autocomplete="off" spellcheck="false"></div>
+            <div class="field"><label for="wsIn">워크스페이스 ID <span style="font-weight:400;color:var(--muted)">(필요할 때만)</span></label><input id="wsIn" type="text" placeholder="wrkspc_로 시작" autocomplete="off" spellcheck="false"><p class="help">키를 만들 때 워크스페이스를 하나로 정했다면 비워두세요.</p></div>
+            <div class="field"><label for="modelIn">판독 모델</label>
+              <select id="modelIn">
+                <option value="claude-sonnet-5-5">Sonnet · 손글씨를 더 정확하게 (추천)</option>
+                <option value="claude-haiku-5-5">Haiku · 더 빠르고 저렴하게</option>
+              </select></div>
+          </div>
           <div class="row2"><button class="btn primary" type="submit">저장</button><button class="btn line" type="button" data-act="del-key">키 지우기</button></div>
         </form>
-        <p class="warnbox">키는 이 기기의 브라우저에만 저장되고, 판독할 때 Anthropic으로만 보내져요. 다른 사람과 같이 쓰는 기기에서는 넣지 말고, GitHub 코드에도 절대 키를 적지 마세요.</p>
+        <p class="help" style="margin-top:14px">키는 이 기기의 브라우저에만 저장되고, 판독할 때 고른 AI 회사로만 보내져요. GitHub 코드에는 절대 키를 적지 마세요.</p>
       </div>
       <div class="blk">
         <div class="blk-h"><h3>앱으로 설치하기</h3></div>
@@ -518,7 +541,8 @@ let sampleApi=null, ttsApi=null, imagesOk=false, aiChecked=false;
 const CFG_KEY='yomi.ai.v1';
 function getCfg(){ try{ return JSON.parse(localStorage.getItem(CFG_KEY))||{}; }catch(e){ return {}; } }
 function setCfg(c){ try{ localStorage.setItem(CFG_KEY,JSON.stringify(c)); return true; }catch(e){ return false; } }
-function hasKey(){ return !!getCfg().key; }
+function provider(){ return getCfg().provider||'gemini'; }
+function hasKey(){ const c=getCfg(); return provider()==='claude'?!!c.key:!!c.gkey; }
 function aiOn(){ return (sampleApi&&imagesOk)||hasKey(); }
 const hasSpeech=typeof window.speechSynthesis!=='undefined'&&typeof window.SpeechSynthesisUtterance!=='undefined';
 function blobToB64(b){ return new Promise((res,rej)=>{ const fr=new FileReader(); fr.onload=()=>res(String(fr.result).split(',')[1]); fr.onerror=()=>rej(fr.error); fr.readAsDataURL(b); }); }
@@ -534,9 +558,14 @@ async function anthropicJson(prompt,images,signal){
   let res;
   try{
     res=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',signal,headers:{
-      'content-type':'application/json','x-api-key':cfg.key,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
+      'content-type':'application/json','x-api-key':cfg.key,'anthropic-version':'2026-10-21','anthropic-dangerous-direct-browser-access':'true',...(cfg.ws?{'anthropic-workspace-id':cfg.ws}:{})},
       body:JSON.stringify({model:cfg.model||'claude-sonnet-5-5',max_tokens:4096,messages:[{role:'user',content}]})});
   }catch(e){ if(signal&&signal.aborted) throw e; throw {code:'network'}; }
+  if(!res.ok){
+    let msg=''; try{ const ej=await res.clone().json(); msg=String(ej&&ej.error&&ej.error.message||''); }catch(e){}
+    if(/workspace/i.test(msg)&&res.status<500) throw {code:'need_ws'};
+    if(/CORS/i.test(msg)) throw {code:'no_cors'};
+  }
   if(res.status===401||res.status===403) throw {code:'bad_key'};
   if(res.status===429||res.status===529) throw {code:'rate_limited'};
   if(res.status===404) throw {code:'bad_model'};
@@ -544,10 +573,36 @@ async function anthropicJson(prompt,images,signal){
   const j=await res.json();
   return parseJsonText(arr(j.content).filter(c=>c.type==='text').map(c=>c.text).join(''));
 }
+async function geminiJson(prompt,images,signal){
+  const cfg=getCfg(); const model=cfg.gmodel||'gemini-3.5-flash-lite';
+  const parts=[];
+  for(const im of images||[]) parts.push({inline_data:{mime_type:'image/jpeg',data:await blobToB64(im)}});
+  parts.push({text:prompt});
+  let res;
+  try{
+    res=await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`,{method:'POST',signal,
+      headers:{'content-type':'application/json','x-goog-api-key':cfg.gkey},
+      body:JSON.stringify({contents:[{role:'user',parts}],generationConfig:{responseMimeType:'application/json',maxOutputTokens:8192}})});
+  }catch(e){ if(signal&&signal.aborted) throw e; throw {code:'network'}; }
+  if(!res.ok){
+    let msg=''; try{ const ej=await res.json(); msg=String(ej&&ej.error&&(ej.error.message||ej.error.status)||''); }catch(e){}
+    if(res.status===429) throw {code:'g_quota'};
+    if(/API key|API_KEY|PERMISSION_DENIED|permission/i.test(msg)||res.status===401||res.status===403) throw {code:'bad_key'};
+    if(res.status===404) throw {code:'bad_model'};
+    if(/location|region|not supported/i.test(msg)) throw {code:'g_region'};
+    throw {code:'api_error',status:res.status};
+  }
+  const j=await res.json();
+  const cand=arr(j.candidates)[0];
+  if(!cand){ throw {code:j.promptFeedback&&j.promptFeedback.blockReason?'blocked':'bad_json'}; }
+  const text=arr(cand.content&&cand.content.parts).filter(p=>typeof p.text==='string'&&!p.thought).map(p=>p.text).join('');
+  if(!text&&cand.finishReason==='SAFETY') throw {code:'blocked'};
+  return parseJsonText(text);
+}
 async function aiJson(prompt,{images=[],signal}={}){
   await aiReady;
   if(sampleApi&&(imagesOk||!images.length)) return sampleApi.json(prompt,{images:images.length?images:undefined,signal,modelTier:'default'});
-  if(hasKey()) return anthropicJson(prompt,images,signal);
+  if(hasKey()) return provider()==='claude'?anthropicJson(prompt,images,signal):geminiJson(prompt,images,signal);
   throw {code:'no_ai'};
 }
 const aiReady=(async()=>{
@@ -634,10 +689,16 @@ function errMsg(e){
   const c=e&&e.code;
   if(c==='not_granted') return 'AI 사용이 허용되지 않았어요. 허용을 묻는 창이 뜨면 허용해 주세요.';
   if(c==='rate_limited') return '요청이 몰렸어요. 30초쯤 뒤에 다시 눌러주세요.';
+  if(c==='g_quota') return '오늘 Gemini 무료 사용량을 다 썼거나 요청이 몰렸어요. 잠시 뒤나 내일 다시 해보세요.';
+  if(c==='g_region') return '이 지역에서는 Gemini 무료 API를 쓸 수 없다고 해요. 설정에서 Claude를 골라주세요.';
+  if(c==='blocked') return 'AI가 이 사진은 처리할 수 없다고 답했어요. 다른 사진으로 해보세요.';
+  if(c==='need_ws') return '이 키는 워크스페이스 ID가 필요해요. 설정에 Console의 워크스페이스 ID(wrkspc_…)를 넣어주세요.';
+  if(c==='no_cors') return '이 조직 설정에서는 브라우저에서 API를 부를 수 없어요. 다른 Console 조직의 키를 써주세요.';
   if(c==='bad_key') return 'API 키가 맞지 않아요. 설정에서 키를 다시 확인해 주세요.';
+  if(c==='api_error') return `AI 서버가 오류(${e.status||'?'})를 보냈어요. 잠시 후 다시 시도해 주세요.`;
   if(c==='bad_model') return '선택한 모델을 쓸 수 없어요. 설정에서 다른 모델을 골라주세요.';
   if(c==='network') return '인터넷 연결을 확인하고 다시 시도해 주세요.';
-  if(c==='no_ai') return '설정에서 Claude API 키를 넣으면 AI 판독을 쓸 수 있어요.';
+  if(c==='no_ai') return '설정에서 Gemini 무료 키를 넣으면 AI 판독을 쓸 수 있어요.';
   if(c==='bad_json') return '판독 결과를 정리하지 못했어요. 한 번 더 시도해 주세요.';
   return '판독하다가 문제가 생겼어요. 잠시 후 다시 시도해 주세요.';
 }
@@ -647,7 +708,7 @@ async function start(){
   if(!aiChecked){ $('#scanState').textContent='AI 연결을 확인하고 있어요…'; await aiReady; }
   if(!aiOn()){
     if(S.img.isDemo||S.img.demoRot){ openResult(clone(DEMO),{src:S.demoUrl}); toast('AI 연결 전이라 예시 결과를 보여드려요'); return; }
-    showErr('AI 판독을 쓰려면 홈 오른쪽 위 설정에서 Claude API 키를 넣어주세요. 지금은 홈의 예시 사진으로 결과 화면을 볼 수 있어요.');
+    showErr('AI 판독을 쓰려면 홈 오른쪽 위 설정(톱니바퀴)에서 Gemini 무료 키를 넣어주세요. 지금은 홈의 예시 사진으로 결과 화면을 볼 수 있어요.');
     $('#scanState').textContent='';
     return;
   }
@@ -913,7 +974,8 @@ document.addEventListener('click',e=>{
     case 'upload': $('#fileIn').click(); break;
     case 'back': back(); break;
     case 'go-settings': go('settings'); break;
-    case 'del-key': { const c=getCfg(); delete c.key; setCfg(c); $('#keyIn').value=''; updateAiUI(); toast('API 키를 지웠어요'); break; }
+    case 'del-key': { const c=getCfg(); if(S.prov==='claude'){ delete c.key; delete c.ws; $('#keyIn').value=''; $('#wsIn').value=''; } else { delete c.gkey; $('#gkeyIn').value=''; } setCfg(c); updateAiUI(); toast('API 키를 지웠어요'); break; }
+    case 'provider': S.prov=b.dataset.p; showProv(); break;
     case 'clear-hist': if(!S.clearArm){ S.clearArm=true; b.textContent='한 번 더 누르면 모두 지워요'; } else { store.items=[]; saveHist(); S.clearArm=false; renderSettings(); toast('기록을 모두 지웠어요'); } break;
     case 'go-home': go('home'); break;
     case 'go-history': go('history'); break;
@@ -951,24 +1013,35 @@ $('#fileIn').addEventListener('change',onFile);
 function updateAiUI(){
   const on=aiOn();
   $('#aiNote').hidden=!aiChecked||on;
-  const st=$('#aiStatus'); if(st){ st.classList.toggle('on',on); st.querySelector('span').textContent=sampleApi&&imagesOk?'Claude 앱에서 연결됨':(hasKey()?'API 키 연결됨':'연결 안 됨'); }
+  const st=$('#aiStatus'); if(st){ st.classList.toggle('on',on); st.querySelector('span').textContent=sampleApi&&imagesOk?'Claude 앱에서 연결됨':(hasKey()?(provider()==='claude'?'Claude 연결됨':'Gemini 연결됨'):'연결 안 됨'); }
+}
+function showProv(){
+  document.querySelectorAll('.seg button').forEach(b=>b.setAttribute('aria-checked',String(b.dataset.p===S.prov)));
+  $('#gemFields').hidden=S.prov!=='gemini'; $('#claFields').hidden=S.prov!=='claude';
 }
 function renderSettings(){
-  const c=getCfg(); $('#keyIn').value=c.key||''; $('#modelIn').value=c.model||'claude-sonnet-5-5';
+  const c=getCfg(); S.prov=provider(); $('#keyIn').value=c.key||''; $('#wsIn').value=c.ws||''; $('#modelIn').value=c.model||'claude-sonnet-5-5';
+  $('#gkeyIn').value=c.gkey||''; $('#gmodelIn').value=c.gmodel||'gemini-3.5-flash-lite'; showProv();
   S.clearArm=false; $('#clearHistBtn').textContent='기록 모두 지우기';
   $('#histInfo').textContent=store.ok?`저장된 판독 기록 ${store.items.length}개 · 이 기기 브라우저에만 저장돼요.`:'이 브라우저에서는 기록을 저장할 수 없어요.';
   updateAiUI();
 }
 $('#keyForm').addEventListener('submit',e=>{
   e.preventDefault();
-  const key=$('#keyIn').value.trim(), model=$('#modelIn').value;
-  if(key&&!/^sk-ant-/.test(key)){ toast('키는 sk-ant-로 시작해요. 다시 확인해 주세요'); return; }
-  const c=getCfg(); if(key) c.key=key; else delete c.key; c.model=model;
-  if(setCfg(c)){ updateAiUI(); toast(key?'저장했어요. 이제 내 사진을 판독할 수 있어요':'설정을 저장했어요'); } else toast('이 브라우저에서는 설정을 저장할 수 없어요');
+  const c=getCfg(); const prov=S.prov||'gemini';
+  if(prov==='gemini'){
+    const k=$('#gkeyIn').value.trim();
+    if(k&&!/^AIza/.test(k)){ toast('Gemini 키는 보통 AIza로 시작해요. 다시 확인해 주세요'); return; }
+    if(k) c.gkey=k; else delete c.gkey; c.gmodel=$('#gmodelIn').value;
+  }else{
+    const key=$('#keyIn').value.trim(), ws=$('#wsIn').value.trim();
+    if(key&&!/^sk-ant-/.test(key)){ toast('Claude 키는 sk-ant-로 시작해요. 다시 확인해 주세요'); return; }
+    if(ws&&!/^wrkspc_/.test(ws)){ toast('워크스페이스 ID는 wrkspc_로 시작해요'); return; }
+    if(key) c.key=key; else delete c.key; if(ws) c.ws=ws; else delete c.ws; c.model=$('#modelIn').value;
+  }
+  c.provider=prov;
+  if(setCfg(c)){ updateAiUI(); toast(hasKey()?`${prov==='claude'?'Claude':'Gemini'}로 저장했어요. 이제 내 사진을 판독할 수 있어요`:'설정을 저장했어요'); } else toast('이 브라우저에서는 설정을 저장할 수 없어요');
 });
-if('serviceWorker' in navigator && location.protocol==='https:' && !window.claude){
-  window.addEventListener('load',()=>{ navigator.serviceWorker.register('sw.js').catch(()=>{}); });
-}
 if(hasSpeech){ try{ speechSynthesis.getVoices(); }catch(e){} }
 
 loadHist(); go('home'); drawDemo();
